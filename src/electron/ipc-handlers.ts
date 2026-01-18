@@ -6,7 +6,7 @@ import { app } from "electron";
 import { join } from "path";
 
 let sessions: SessionStore;
-let runnerHandles = new Map<string, RunnerHandle>();
+const runnerHandles = new Map<string, RunnerHandle>();
 
 function initializeSessions() {
   if (!sessions) {
